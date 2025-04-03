@@ -21,14 +21,14 @@
 <body class="font-light antialiased">
     <x-banner />
 
-@include('layouts.partials.header')
+    @include('layouts.partials.header')
 
-
+    @yield('hero')
     <main class="container mx-auto px-5 flex flex-grow">
-       {{ $slot }}
+        {{ $slot }}
     </main>
 
-@include('layouts.partials.footer')
+    @include('layouts.partials.footer')
 
 
     @stack('modals')
